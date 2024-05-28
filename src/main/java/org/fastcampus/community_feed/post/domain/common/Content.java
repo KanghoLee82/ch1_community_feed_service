@@ -10,4 +10,12 @@ public class Content {
 
     this.content = content;
   }
+
+  public void updateContent(String content) {
+    if (content == null || content.isEmpty()) {
+      throw new IllegalArgumentException("content should not be null or empty");
+    }
+
+    this.content = content;
+  }
 }
