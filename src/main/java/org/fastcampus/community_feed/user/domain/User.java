@@ -17,10 +17,6 @@ public class User {
     this.followerCount = new UserRelationCount();
   }
 
-  public Long getId() {
-    return id;
-  }
-
   public void follow(User followee) {
     followingCount.increaseCount();
     followee.increaseFollowerCount();
