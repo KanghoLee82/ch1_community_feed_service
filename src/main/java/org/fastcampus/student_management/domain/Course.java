@@ -34,4 +34,16 @@ public class Course {
   public String getStudentName() {
     return student.getName();
   }
+
+  public int getFee() {
+    return fee;
+  }
+
+  public DayOfWeek getDayOfWeek() {
+    return dayOfWeek;
+  }
+
+  public Long getCourseTime() {
+    return courseTime;
+  }
 }

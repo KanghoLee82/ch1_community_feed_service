@@ -1,5 +1,6 @@
 package org.fastcampus.student_management.application.course.dto;
 
+import org.fastcampus.student_management.domain.Course;
 import org.fastcampus.student_management.domain.DayOfWeek;
 
 public class CourseInfoDto {
@@ -15,6 +16,14 @@ public class CourseInfoDto {
     this.dayOfWeek = DayOfWeek.valueOf(dayOfWeek);
     this.studentName = studentName;
     this.courseTime = courseTime;
+  }
+
+  public CourseInfoDto(Course course) {
+    this.courseName = course.getCourseName();
+    this.fee = course.getFee();
+    this.dayOfWeek = course.getDayOfWeek();
+    this.studentName = course.getStudentName();
+    this.courseTime = course.getCourseTime();
   }
 
   public String getCourseName() {
